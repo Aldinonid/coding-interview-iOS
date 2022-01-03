@@ -13,16 +13,34 @@
 		A5D4B53D2783561900277293 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D4B53C2783561900277293 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A5D4B54B2783563400277293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5D4B52A2783561700277293 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5D4B5312783561700277293;
+			remoteInfo = "coding-interview";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A5D4B5322783561700277293 /* coding-interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coding-interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D4B5352783561700277293 /* coding_interviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coding_interviewApp.swift; sourceTree = "<group>"; };
 		A5D4B5372783561700277293 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5D4B5392783561900277293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D4B53C2783561900277293 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5D4B5472783563400277293 /* coding-interviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coding-interviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A5D4B52F2783561700277293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D4B5442783563400277293 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				A5D4B5342783561700277293 /* coding-interview */,
+				A5D4B5482783563400277293 /* coding-interviewTests */,
 				A5D4B5332783561700277293 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A5D4B5322783561700277293 /* coding-interview.app */,
+				A5D4B5472783563400277293 /* coding-interviewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +87,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A5D4B5482783563400277293 /* coding-interviewTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "coding-interviewTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +114,24 @@
 			productReference = A5D4B5322783561700277293 /* coding-interview.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A5D4B5462783563400277293 /* coding-interviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D4B54D2783563400277293 /* Build configuration list for PBXNativeTarget "coding-interviewTests" */;
+			buildPhases = (
+				A5D4B5432783563400277293 /* Sources */,
+				A5D4B5442783563400277293 /* Frameworks */,
+				A5D4B5452783563400277293 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5D4B54C2783563400277293 /* PBXTargetDependency */,
+			);
+			name = "coding-interviewTests";
+			productName = "coding-interviewTests";
+			productReference = A5D4B5472783563400277293 /* coding-interviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +144,10 @@
 				TargetAttributes = {
 					A5D4B5312783561700277293 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					A5D4B5462783563400277293 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A5D4B5312783561700277293;
 					};
 				};
 			};
@@ -116,6 +165,7 @@
 			projectRoot = "";
 			targets = (
 				A5D4B5312783561700277293 /* coding-interview */,
+				A5D4B5462783563400277293 /* coding-interviewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +177,13 @@
 			files = (
 				A5D4B53D2783561900277293 /* Preview Assets.xcassets in Resources */,
 				A5D4B53A2783561900277293 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D4B5452783563400277293 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +199,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5D4B5432783563400277293 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5D4B54C2783563400277293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5D4B5312783561700277293 /* coding-interview */;
+			targetProxy = A5D4B54B2783563400277293 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A5D4B53E2783561900277293 /* Debug */ = {
@@ -319,6 +391,42 @@
 			};
 			name = Release;
 		};
+		A5D4B54E2783563400277293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKQLRUN464;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aldinonid.coding-interviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coding-interview.app/coding-interview";
+			};
+			name = Debug;
+		};
+		A5D4B54F2783563400277293 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKQLRUN464;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aldinonid.coding-interviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coding-interview.app/coding-interview";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +444,15 @@
 			buildConfigurations = (
 				A5D4B5412783561900277293 /* Debug */,
 				A5D4B5422783561900277293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D4B54D2783563400277293 /* Build configuration list for PBXNativeTarget "coding-interviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D4B54E2783563400277293 /* Debug */,
+				A5D4B54F2783563400277293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
