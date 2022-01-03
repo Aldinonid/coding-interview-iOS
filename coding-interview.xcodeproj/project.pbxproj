@@ -14,6 +14,7 @@
 		A5D4B551278356FF00277293 /* FizzBuzzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4B550278356FF00277293 /* FizzBuzzTest.swift */; };
 		A5D4B5532783577000277293 /* PalindromeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4B5522783577000277293 /* PalindromeTest.swift */; };
 		A5D4B555278357B900277293 /* SetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4B554278357B900277293 /* SetTest.swift */; };
+		A5D4B557278357F300277293 /* FactorialTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4B556278357F300277293 /* FactorialTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A5D4B550278356FF00277293 /* FizzBuzzTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTest.swift; sourceTree = "<group>"; };
 		A5D4B5522783577000277293 /* PalindromeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeTest.swift; sourceTree = "<group>"; };
 		A5D4B554278357B900277293 /* SetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTest.swift; sourceTree = "<group>"; };
+		A5D4B556278357F300277293 /* FactorialTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				A5D4B550278356FF00277293 /* FizzBuzzTest.swift */,
 				A5D4B5522783577000277293 /* PalindromeTest.swift */,
 				A5D4B554278357B900277293 /* SetTest.swift */,
+				A5D4B556278357F300277293 /* FactorialTest.swift */,
 			);
 			path = "coding-interviewTests";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				A5D4B555278357B900277293 /* SetTest.swift in Sources */,
 				A5D4B5532783577000277293 /* PalindromeTest.swift in Sources */,
 				A5D4B551278356FF00277293 /* FizzBuzzTest.swift in Sources */,
+				A5D4B557278357F300277293 /* FactorialTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
