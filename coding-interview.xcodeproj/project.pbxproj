@@ -11,6 +11,7 @@
 		A5D4B5382783561700277293 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4B5372783561700277293 /* ContentView.swift */; };
 		A5D4B53A2783561900277293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D4B5392783561900277293 /* Assets.xcassets */; };
 		A5D4B53D2783561900277293 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D4B53C2783561900277293 /* Preview Assets.xcassets */; };
+		A5D4B551278356FF00277293 /* FizzBuzzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D4B550278356FF00277293 /* FizzBuzzTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		A5D4B5392783561900277293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D4B53C2783561900277293 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5D4B5472783563400277293 /* coding-interviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coding-interviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D4B550278356FF00277293 /* FizzBuzzTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		A5D4B5482783563400277293 /* coding-interviewTests */ = {
 			isa = PBXGroup;
 			children = (
+				A5D4B550278356FF00277293 /* FizzBuzzTest.swift */,
 			);
 			path = "coding-interviewTests";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 					};
 					A5D4B5462783563400277293 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = A5D4B5312783561700277293;
 					};
 				};
@@ -203,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D4B551278356FF00277293 /* FizzBuzzTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,14 +400,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YKQLRUN464;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aldinonid.coding-interviewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coding-interview.app/coding-interview";
@@ -413,10 +425,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YKQLRUN464;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aldinonid.coding-interviewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
