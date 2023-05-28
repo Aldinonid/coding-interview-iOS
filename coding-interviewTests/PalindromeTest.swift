@@ -10,12 +10,11 @@ import XCTest
 class PalindromeTest: XCTestCase {
 
 	func isPalindrome(value: String) -> Bool {
-		let len = value.count / 2
-		
-		for i in 0..<len {
-			let start = value.index(value.startIndex, offsetBy: i)
-			let end = value.index(value.endIndex, offsetBy: (i * -1) - 1)
-			if value[start] != value[end] {
+		for i in 0..<value.count / 2 {
+			let start = Array(value)[i]
+			let end = Array(value)[(value.count - 1) - i]
+			
+			if start != end {
 				return false
 			}
 		}
